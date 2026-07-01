@@ -176,20 +176,20 @@ Acceptance:
 
 See `examples/basic-ai-project/README.md` for a minimal example.
 
-## Minimum GitHub Release Standard
+## v0.1 Public Repository Standard
 
-For an initial public GitHub repository, this project should include:
+This v0.1 repository includes:
 
 - complete documented structure
 - MIT License
 - README that clearly explains the scope
 - copyable skill file
-- copyable `.ai/` templates
+- copyable task, rules, acceptance, execution report, and handoff templates
 - example usage
 - no real secrets, tokens, private paths, or private repository remotes
-- no npm package, VS Code plugin, MCP server, GitHub Actions, or release workflow in version 0
+- no npm package, VS Code plugin, MCP server, GitHub Actions, runtime enforcement, or release workflow in v0.1
 
-This repository is intended for local human review before any human chooses whether to publish it.
+This repository is intended to remain documentation-and-template-only in v0.1. Any public release, tag, or automation should be reviewed and approved by a human.
 
 ## Roadmap
 
