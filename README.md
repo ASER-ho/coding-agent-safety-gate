@@ -1,10 +1,10 @@
 # Coding Agent Safety Gate
 
-`coding-agent-safety-gate` is a documentation-first safety gate for AI coding agents: task boundaries, forbidden actions, and evidence-based acceptance.
+A documentation-first safety gate for AI coding agents: task boundaries, forbidden actions, and evidence-based acceptance.
+
+面向 AI 编程助手的文档优先安全门禁：任务边界、禁止操作与证据型验收。
 
 Stop AI coding agents from drifting, over-editing, leaking secrets, or declaring work done without evidence.
-
-In Chinese: 防止 AI 编程助手跑偏、越权修改、泄露敏感信息，或在没有证据时声称完成。
 
 This project provides workflow guardrails, not runtime enforcement.
 
