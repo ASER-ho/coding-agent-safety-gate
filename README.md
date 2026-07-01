@@ -146,7 +146,7 @@ The default safety boundaries are:
 
 There are already runtime guardrail, hook-based enforcement, pre-action authorization, and AGENTS.md security-template projects for AI coding agents.
 
-This project is intentionally narrower.
+This project is intentionally narrower: a pure Markdown workflow layer. Most guardrail projects add hooks, MCP servers, or runtime enforcement. This one doesn't.
 
 `coding-agent-safety-gate` is documentation-first. It does not install hooks, block shell commands at runtime, modify editor or agent configuration, provide a CLI, ship an MCP server, publish an npm package, or act as a pre-action authorization layer.
 
@@ -199,22 +199,32 @@ This v0.1 repository includes:
 - copyable task, rules, acceptance, execution report, and handoff templates
 - example usage
 - no real secrets, tokens, private paths, or private repository remotes
-- no npm package, VS Code plugin, MCP server, GitHub Actions, runtime enforcement, or release workflow in v0.1
+- no npm package, VS Code plugin, MCP server, GitHub Actions, runtime enforcement, or release workflow
 
-This repository is intended to remain documentation-and-template-only in v0.1. Any public release, tag, or automation should be reviewed and approved by a human.
+This repository is intended to remain documentation-and-template-only. Any public release, tag, or automation should be reviewed and approved by a human.
 
 ## Roadmap
 
-The following items are future / planned ideas, not completed features:
+### Completed in v0.2
 
-- completed in v0.2: example workflows for Codex and Claude Code
-- future / planned: example workflows for Cursor and Gemini CLI
-- future / planned: team policy examples for open source maintainers
-- future / planned: optional checklist variants for security-sensitive repositories
-- future / planned: comparison guide for different AI coding agent environments
-- future / planned: lightweight examples for multi-agent handoff patterns
+- community files: AGENTS.md, SECURITY.md, CONTRIBUTING.md, issue templates, PR template
+- review and redaction checklists: GIT_DIFF_REVIEW_CHECKLIST.md, SAFETY_REDACTION_CHECKLIST.md
+- example workflows for Codex and Claude Code
 
-No automation, package, plugin, MCP server, or release workflow is included in this first version.
+### Completed in v0.2.1
+
+- quickstart guide and copy-paste prompt
+- filled `.ai/` example directory in `examples/basic-ai-project/`
+
+### Future / planned
+
+- example workflows for Cursor and Gemini CLI
+- team policy examples for open source maintainers
+- optional checklist variants for security-sensitive repositories
+- comparison guide for different AI coding agent environments
+- lightweight examples for multi-agent handoff patterns
+
+No automation, package, plugin, MCP server, or release workflow is included.
 
 ## License
 

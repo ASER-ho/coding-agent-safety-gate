@@ -28,6 +28,6 @@ Use placeholders such as `YOUR_API_KEY_HERE`, `EXAMPLE_TOKEN`, or `REDACTED`.
 
 ## Scope
 
-This project is **documentation-and-template-only** in v0.1. It does not accept, verify, scan, or store real secrets. It does not run code, install dependencies, or execute commands.
+This project is **documentation-and-template-only**. It does not accept, verify, scan, or store real secrets. It does not run code, install dependencies, or execute commands.
 
 If you discover a security issue in a dependency, runtime, or external tool used alongside this project, report it to that tool's maintainers.

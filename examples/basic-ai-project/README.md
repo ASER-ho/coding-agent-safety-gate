@@ -1,6 +1,6 @@
 # Basic AI Project Example
 
-This example shows how a normal project can use `coding-agent-safety-gate` with a minimal `.ai/` directory.
+This example shows how a normal project can use `coding-agent-safety-gate` with a `.ai/` directory.
 
 No real secrets, private paths, or real repository remotes are included.
 
@@ -12,88 +12,39 @@ basic-ai-project/
 └── .ai/
     ├── PROJECT_RULES.md
     ├── NEXT_TASK.md
-    └── ACCEPTANCE_CHECKLIST.md
+    ├── ACCEPTANCE_CHECKLIST.md
+    ├── AGENT_EXECUTION_REPORT.md
+    └── HANDOFF.md
 ```
 
-## Example `.ai/PROJECT_RULES.md`
+The `.ai/` directory in this example contains filled-in copies of all five core templates. Open each file to see what a completed version looks like:
 
-```text
-# PROJECT_RULES
+- [PROJECT_RULES.md](.ai/PROJECT_RULES.md)
+- [NEXT_TASK.md](.ai/NEXT_TASK.md)
+- [ACCEPTANCE_CHECKLIST.md](.ai/ACCEPTANCE_CHECKLIST.md)
+- [AGENT_EXECUTION_REPORT.md](.ai/AGENT_EXECUTION_REPORT.md)
+- [HANDOFF.md](.ai/HANDOFF.md)
 
-Project purpose:
-- A small demo project used to test AI-assisted documentation updates.
+Seven templates are available in `templates/` — the five above plus `GIT_DIFF_REVIEW_CHECKLIST.md` and `SAFETY_REDACTION_CHECKLIST.md`. Copy only the ones you need.
 
-Allowed:
-- Edit README.md when the current task allows it.
-- Report changed files and verification evidence.
+## Suggested workflow
 
-Not allowed:
-- Read or expose real secrets.
-- Add dependencies.
-- Create scripts.
-- Create GitHub Actions.
-- Add or modify git remotes.
-- Run git push, git tag, or create a release.
-- Modify system configuration.
-```
-
-## Example `.ai/NEXT_TASK.md`
-
-```text
-# NEXT_TASK
-
-Current task:
-- Update README.md to make the project introduction clearer.
-
-Background:
-- The existing introduction is too vague for new readers.
-
-File scope:
-- README.md
-
-Explicitly allowed operations:
-- Edit the README introduction.
-- Add one short usage example.
-
-Explicitly forbidden operations:
-- Do not edit files outside README.md.
-- Do not add scripts.
-- Do not add dependencies.
-- Do not read or expose real secrets.
-- Do not introduce full private local paths.
-- Do not run git push, git tag, create a release, or add a remote.
-
-Acceptance criteria:
-- README.md explains the project in one or two clear paragraphs.
-- README.md contains one simple usage example.
-- No unrelated files are changed.
-- The agent reports verification evidence.
-```
-
-## Example `.ai/ACCEPTANCE_CHECKLIST.md`
-
-```text
-# ACCEPTANCE_CHECKLIST
-
-- [ ] README.md exists.
-- [ ] README.md introduction is clearer.
-- [ ] README.md includes one simple usage example.
-- [ ] No unrelated files were changed.
-- [ ] No real secret or API key appears.
-- [ ] No full private local path appears.
-- [ ] No system configuration was modified.
-- [ ] No git push, tag, release, or remote operation was performed.
-- [ ] The agent provided changed files and verification results.
-- [ ] The agent listed incomplete items, if any.
-```
+1. Copy `templates/PROJECT_RULES.md` into `.ai/` and fill it in once for your project.
+2. Copy `templates/NEXT_TASK.md` into `.ai/` and fill in exactly one task.
+3. Give the agent `.ai/PROJECT_RULES.md` and `.ai/NEXT_TASK.md`.
+4. The agent performs only the approved task and fills `AGENT_EXECUTION_REPORT.md`.
+5. Human reviews the result with `ACCEPTANCE_CHECKLIST.md` and `GIT_DIFF_REVIEW_CHECKLIST.md`.
+6. Before sharing, run `SAFETY_REDACTION_CHECKLIST.md`.
+7. Update `HANDOFF.md` if another human or agent continues the work.
 
 ## Example Agent Request
 
 ```text
-Please follow the coding-agent-safety-gate skill.
-Read .ai/PROJECT_RULES.md and .ai/NEXT_TASK.md.
-Complete only the approved README update.
-When finished, provide evidence using .ai/ACCEPTANCE_CHECKLIST.md.
+Read .ai/PROJECT_RULES.md and .ai/NEXT_TASK.md before editing.
+Complete only the task in NEXT_TASK.md. Do not expand the scope.
+After finishing, fill .ai/AGENT_EXECUTION_REPORT.md with evidence.
+Do not push, tag, release, add dependencies, read secrets, or expose full paths.
+If the task boundary is unclear, stop and mark NEEDS HUMAN REVIEW.
 ```
 
 The human decides whether the result is accepted and what the next task should be.
