@@ -12,7 +12,7 @@ This project is documentation-first. Contributions are welcome in these areas:
 - examples for coding-agent workflows (Claude Code, Codex, Cursor, Gemini CLI, and others)
 - clearer safety boundaries and guardrail language
 
-## What we do not accept in v0.1
+## What we do not accept
 
 To keep the project focused, we are not accepting contributions for:
 
