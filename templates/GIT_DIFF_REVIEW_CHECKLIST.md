@@ -19,7 +19,7 @@ Use this checklist to review a git diff after an AI coding agent completes a tas
 - **任务文件（NEXT_TASK.md）/ Task file (NEXT_TASK.md):**
 - **预期变更文件 / Expected changed files:**
 - **实际变更文件（git diff --name-only）/ Actual changed files (git diff --name-only):**
-- **人类审查者 / Human reviewer:**
+- **用户审查者 / Human reviewer:**
 - **日期 / Date:**
 
 ---
@@ -81,6 +81,6 @@ Use this checklist to review a git diff after an AI coding agent completes a tas
 - [ ] **批准 / Approved** — diff 干净，范围匹配，证据完整。 / diff is clean, scope matched, evidence complete.
 - [ ] **需要修改 / Needs changes** — 在下方列出需要的修改。 / list required changes below.
 - [ ] **Blocked** — 检测到安全边界或范围违反。 / safety boundary or scope violation detected.
-- [ ] **需要人类审查 / Needs human review** — 模糊性或风险需要人类判断。 / ambiguity or risk requires human judgment.
+- [ ] **需要用户审查 / Needs human review** — 模糊性或风险需要用户判断。 / ambiguity or risk requires human judgment.
 
 备注 / Notes:

@@ -80,7 +80,7 @@ AI Agent 不得 / The AI agent must not:
 4. 做最小的有用改动。 / Make the smallest useful change.
 5. 只运行下面列出的验证命令。 / Run only the validation commands listed below.
 6. 填写执行报告。 / Fill the execution report.
-7. 停下来等待人类审查。 / Stop for human review.
+7. 停下来等待用户审查。 / Stop for human review.
 
 ## 验证命令 / Validation Commands
 

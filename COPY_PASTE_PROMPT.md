@@ -15,7 +15,7 @@ Before editing any file, read the project safety rules and the current task.
 - .ai/PROJECT_RULES.md
 - .ai/NEXT_TASK.md
 
-如果 .ai/PROJECT_RULES.md 不存在，请先向人类索要项目规则再继续。
+如果 .ai/PROJECT_RULES.md 不存在，请先向用户索要项目规则再继续。
 If .ai/PROJECT_RULES.md does not exist, ask the human to provide the project
 rules before continuing.
 
@@ -25,8 +25,7 @@ Treat NEXT_TASK.md as the only task you are currently authorized to perform.
 在批准的文件和操作范围内工作。不要扩大范围。
 Work inside the approved file and action scope. Do not expand the scope.
 
-完成后，提供执行报告，包含：
-After finishing, provide an execution report with:
+完成后，提供执行报告，包含 / After finishing, provide an execution report with:
 - 变更文件 / changed files
 - 变更摘要 / summary of changes
 - 为什么需要这个变更 / why the change was needed
@@ -44,7 +43,7 @@ After finishing, provide an execution report with:
   cookies, private keys, credentials, or SecretStore values).
 - 不要暴露完整的本地机器路径。
   Do not expose full local machine paths.
-- 未经人类明确批准，不要执行 git push、git tag、创建 release、添加
+- 未经用户明确批准，不要执行 git push、git tag、创建 release、添加
   remote、force push 或重写历史。
   Do not run git push, git tag, create a release, add a remote, force push,
   or rewrite history without explicit human approval.
@@ -63,16 +62,16 @@ After finishing, provide an execution report with:
   Do not delete files outside the approved task scope.
 - 未经批准，不要启动另一个 AI agent 或点击 Terminal start。
   Do not start another AI agent or click Terminal start without approval.
-- 未经人类确认，不要决定下一步任务。
+- 未经用户确认，不要决定下一步任务。
   Do not decide the next task without human confirmation.
 - 没有证据不要声称工作完成。
   Do not claim work is complete without evidence.
 
-如果任务边界不清楚、找不到必需的文件、或看起来必须执行某个被禁止的操作，
+如果任务边界不清楚、找不到必需的文件、或似乎必须执行某个被禁止的操作，
 停下来标记 NEEDS HUMAN REVIEW。
 If the task boundary is unclear, required files are missing, or a forbidden
 action appears necessary, stop and mark NEEDS HUMAN REVIEW.
 
-人类决定 commit、push、tag、release 和下一步任务。
+用户决定 commit、push、tag、release 和下一步任务。
 The human decides commit, push, tag, release, and the next task.
 ```

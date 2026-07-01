@@ -1,6 +1,6 @@
 # HANDOFF / 工作交接
 
-使用此文档将上下文从一个人类或 AI Agent 会话转移到下一个。复制到你自己的项目中。
+使用此文档将上下文从一个用户或 AI Agent 会话转移到下一个。复制到你自己的项目中。
 
 Use this document to transfer context from one human or AI agent session to the next. Copy into your own project.
 
@@ -44,7 +44,7 @@ Use this document to transfer context from one human or AI agent session to the 
 
 - 在 README.md 中添加"快速开始"部分 / Add a "Getting Started" section to README.md
 
-人类批准状态 / Human approval status:
+用户批准状态 / Human approval status:
 
 - [ ] 已批准 / Approved
 - [x] 未批准 / Not approved
@@ -54,7 +54,7 @@ Use this document to transfer context from one human or AI agent session to the 
 
 下一个任务可接受的条件 / The next task is acceptable only if:
 
-- NEXT_TASK.md 已填写并由人类审查 / NEXT_TASK.md is filled in and reviewed by a human
+- NEXT_TASK.md 已填写并由用户审查 / NEXT_TASK.md is filled in and reviewed by a human
 - 任务保持在 README.md 范围内 / The task stays within README.md
 - 不触碰允许列表之外的文件 / No files outside the allowed list are touched
 
@@ -67,7 +67,7 @@ Use this document to transfer context from one human or AI agent session to the 
 
 下一个 AI Agent 不得 / The next AI agent must not:
 
-- 未经人类批准扩大范围 / expand scope without human approval
+- 未经用户批准扩大范围 / expand scope without human approval
 - 决定下一个任务 / decide the next task
 - 编辑批准任务之外的文件 / edit files outside the approved task
 - 编辑禁止的文件 / edit forbidden files

@@ -77,7 +77,7 @@ This report may be used by Claude Code, Codex, Cursor, Gemini CLI, or another AI
 
 ```
 
-## 是否需要人类批准 / Human Approval Needed
+## 是否需要用户批准 / Human Approval Needed
 
 - [ ] 否 / No
 - [ ] 是 / Yes

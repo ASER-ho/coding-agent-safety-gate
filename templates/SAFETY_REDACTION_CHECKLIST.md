@@ -77,6 +77,6 @@ Use this checklist before sharing an execution report, handoff document, issue, 
 - [ ] **可以分享 / Safe to share** — 所有敏感内容已脱敏或未曾出现。 / all sensitive content is redacted or never present.
 - [ ] **需要脱敏 / Needs redaction** — 在分享前必须脱敏特定项目（在下方列出）。 / specific items must be redacted before sharing (list below).
 - [ ] **Blocked** — 材料无法在保留所需证据的前提下安全脱敏。 / material cannot be safely redacted without losing required evidence.
-- [ ] **需要人类审查 / Needs human review** — 模糊性或敏感度需要人类判断。 / ambiguity or sensitivity requires human judgment.
+- [ ] **需要用户审查 / Needs human review** — 模糊性或敏感度需要用户判断。 / ambiguity or sensitivity requires human judgment.
 
 脱敏备注 / Redaction notes:

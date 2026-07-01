@@ -31,7 +31,7 @@ AI Agent 可以 / The AI agent may:
 
 AI Agent 不得 / The AI agent must not:
 
-- 未经人类批准扩大范围 / expand scope without human approval
+- 未经用户批准扩大范围 / expand scope without human approval
 - 决定下一个任务 / decide the next task
 - 编辑禁止的文件 / edit forbidden files
 - 执行禁止的更改 / perform forbidden changes
@@ -79,7 +79,7 @@ AI Agent 不得运行或配置 / The AI agent must not run or configure:
 - force push
 - 历史重写 / history rewrite
 
-这些操作需要明确的人类批准。
+这些操作需要明确的用户批准。
 
 These actions require explicit human approval.
 
@@ -124,9 +124,9 @@ AI Agent 不得删除 / The AI agent must not delete:
 - 未完成事项 / incomplete items
 - 最终状态：`PASS`、`FAIL`、`BLOCKED` 或 `NEEDS HUMAN REVIEW` / final status: `PASS`, `FAIL`, `BLOCKED`, or `NEEDS HUMAN REVIEW`
 
-## 人类批准要求 / Human Approval Requirement
+## 用户批准要求 / Human Approval Requirement
 
-在以下情况前需要人类批准 / Human approval is required before:
+在以下情况前需要用户批准 / Human approval is required before:
 
 - 扩大文件范围 / expanding file scope
 - 改变任务目标 / changing the task goal

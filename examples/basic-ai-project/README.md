@@ -41,9 +41,9 @@ Seven templates are available in `templates/` — the five above plus `GIT_DIFF_
 2. 把 `templates/NEXT_TASK.md` 复制到 `.ai/`，填写恰好一个任务。 / Copy `templates/NEXT_TASK.md` into `.ai/` and fill in exactly one task.
 3. 给 Agent `.ai/PROJECT_RULES.md` 和 `.ai/NEXT_TASK.md`。 / Give the agent `.ai/PROJECT_RULES.md` and `.ai/NEXT_TASK.md`.
 4. Agent 只执行批准的任务，填写 `AGENT_EXECUTION_REPORT.md`。 / The agent performs only the approved task and fills `AGENT_EXECUTION_REPORT.md`.
-5. 人类用 `ACCEPTANCE_CHECKLIST.md` 和 `GIT_DIFF_REVIEW_CHECKLIST.md` 审查结果。 / Human reviews the result with `ACCEPTANCE_CHECKLIST.md` and `GIT_DIFF_REVIEW_CHECKLIST.md`.
+5. 用户用 `ACCEPTANCE_CHECKLIST.md` 和 `GIT_DIFF_REVIEW_CHECKLIST.md` 审查结果。 / Human reviews the result with `ACCEPTANCE_CHECKLIST.md` and `GIT_DIFF_REVIEW_CHECKLIST.md`.
 6. 分享前检查 `SAFETY_REDACTION_CHECKLIST.md`。 / Before sharing, run `SAFETY_REDACTION_CHECKLIST.md`.
-7. 如果另一个人类或 Agent 继续工作，更新 `HANDOFF.md`。 / Update `HANDOFF.md` if another human or agent continues the work.
+7. 如果另一个用户或 Agent 继续工作，更新 `HANDOFF.md`。 / Update `HANDOFF.md` if another human or agent continues the work.
 
 ## 示例 Agent 请求 / Example Agent Request
 
@@ -61,6 +61,6 @@ Do not push, tag, release, add dependencies, read secrets, or expose full paths.
 If the task boundary is unclear, stop and mark NEEDS HUMAN REVIEW.
 ```
 
-人类决定结果是否被接受以及下一步任务。
+用户决定结果是否被接受以及下一步任务。
 
 The human decides whether the result is accepted and what the next task should be.

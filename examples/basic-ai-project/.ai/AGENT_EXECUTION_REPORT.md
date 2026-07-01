@@ -84,7 +84,7 @@ git diff README.md
 docs: clarify README introduction
 ```
 
-## 是否需要人类批准 / Human Approval Needed
+## 是否需要用户批准 / Human Approval Needed
 
 - [x] 否 / No
 - [ ] 是 / Yes

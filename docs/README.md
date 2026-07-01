@@ -9,7 +9,7 @@ This directory contains documentation for `coding-agent-safety-gate`. Read in th
 | 顺序 / Order | 文件 / File | 内容 / What it covers |
 |---|---|---|
 | 1 | `safety-boundaries.md` | 默认安全规则：机密安全、路径安全、Git 安全、环境安全、执行安全、证据型验收，以及为什么这只是一层而不是整个安全系统 / The default safety rules: secret-safe, path-safe, git-safe, env-safe, execution-safe, evidence-based acceptance, and why this is one layer, not the whole safety system |
-| 2 | `human-in-the-loop.md` | 人类与 AI Agent 的责任分工、多 Agent 协作流程、需要人类决策的点 / Division of responsibility between humans and AI agents, multi-agent collaboration flow, required human decision points |
+| 2 | `human-in-the-loop.md` | 用户与 AI Agent 的责任分工、多 Agent 协作流程、需要用户决策的点 / Division of responsibility between humans and AI agents, multi-agent collaboration flow, required human decision points |
 
 ## 阅读后 / After reading
 

@@ -1,6 +1,6 @@
 # HANDOFF / 工作交接
 
-使用此文档将上下文从一个人类或 AI Agent 会话转移到下一个。
+使用此文档将上下文从一个用户或 AI Agent 会话转移到下一个。
 
 Use this document to transfer context from one human or AI agent session to the next.
 
@@ -40,7 +40,7 @@ Use this document to transfer context from one human or AI agent session to the 
 
 -
 
-人类批准状态 / Human approval status:
+用户批准状态 / Human approval status:
 
 - [ ] 已批准 / Approved
 - [ ] 未批准 / Not approved
@@ -60,7 +60,7 @@ Use this document to transfer context from one human or AI agent session to the 
 
 下一个 AI Agent 不得 / The next AI agent must not:
 
-- 未经人类批准扩大范围 / expand scope without human approval
+- 未经用户批准扩大范围 / expand scope without human approval
 - 决定下一个任务 / decide the next task
 - 编辑批准任务之外的文件 / edit files outside the approved task
 - 编辑禁止的文件 / edit forbidden files

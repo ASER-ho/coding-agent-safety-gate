@@ -72,9 +72,9 @@ Use this checklist before accepting AI-assisted work.
 
 -
 
-## 人类审查 / Human Review
+## 用户审查 / Human Review
 
-- [ ] 需要人类审查？否 / 是 / Human review required? No / Yes
+- [ ] 需要用户审查？否 / 是 / Human review required? No / Yes
 
 原因 / Reason:
 

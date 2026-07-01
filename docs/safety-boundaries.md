@@ -43,11 +43,11 @@ Avoid machine-specific paths that reveal a user name, home directory, private wo
 
 ## Git-Safe / Git 安全
 
-AI Agent 未经人类批准不得执行会发布、重写或连接仓库的 git 操作。
+AI Agent 未经用户批准不得执行会发布、重写或连接仓库的 git 操作。
 
 AI agents must not perform git operations that publish, rewrite, or connect a repository without human approval.
 
-未经人类批准明确禁止 / Explicitly forbidden without human approval:
+未经用户批准明确禁止 / Explicitly forbidden without human approval:
 
 - `git push`
 - `git tag`
@@ -73,7 +73,7 @@ AI Agent 不得修改 / AI agents must not modify:
 - 机器级凭据 / machine-level credentials
 - 全局 Agent 配置 / global agent configuration
 
-如果环境变更看起来必要，Agent 必须停下来询问人类。
+如果环境变更看起来必要，Agent 必须停下来询问用户。
 
 If an environment change appears necessary, the agent must stop and ask the human.
 
@@ -111,7 +111,7 @@ AI agents must provide evidence before declaring work complete.
 - 验证结果 / verification results
 - 风险 / risks
 - 未完成工作 / incomplete work
-- 需要的人类批准 / required human approvals
+- 需要的用户批准 / required human approvals
 - 最终状态：`PASS`、`FAIL`、`BLOCKED` 或 `NEEDS HUMAN REVIEW` / final status: `PASS`, `FAIL`, `BLOCKED`, or `NEEDS HUMAN REVIEW`
 
 ## 明确禁止的自主行为 / Explicitly Forbidden Autonomous Actions
@@ -134,7 +134,7 @@ AI Agent 不得自行 / The AI agent must not independently:
 - 点击 Terminal start / click Terminal start
 - 自行决定下一个任务 / invent the next task
 
-当需要做出决定时，Agent 应停下来询问人类。
+当需要做出决定时，Agent 应停下来询问用户。
 
 When a decision is needed, the agent should stop and ask the human.
 
@@ -151,9 +151,9 @@ This project provides one layer of a workflow safety stack. It is not a complete
 - 备份与回滚 / backup and rollback
 - 运行时命令拦截 / runtime command blocking
 - 机密扫描 / secret scanning
-- 人类代码审查 / human code review
+- 用户代码审查 / human code review
 
-它的职责更窄：在每次 AI 辅助变更前后，让任务边界、禁止动作、证据要求和人类 handoff 变得明确且可审查。
+它的职责更窄：在每次 AI 辅助变更前后，让任务边界、禁止动作、证据要求和用户 handoff 变得明确且可审查。
 
 Its job is narrower: make task boundaries, forbidden actions, evidence requirements, and human handoff explicit and reviewable before and after each AI-assisted change.
 
