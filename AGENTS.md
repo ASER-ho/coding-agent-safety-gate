@@ -1,4 +1,4 @@
-# AGENTS.md
+# AGENTS
 
 This file is read by AI coding agents (Claude Code, Codex, Cursor, Gemini CLI, and others) when they enter this repository. It defines the safety constraints they must follow.
 
@@ -10,6 +10,7 @@ This repository is **documentation-first**. It contains only Markdown files: a s
 
 When working in this repository:
 
+- **Rule #1 — stop and get explicit human approval before breaking any rule in this file.**
 - Prefer small, Markdown-only changes.
 - Do not add a CLI, MCP server, VS Code plugin, npm package, runtime enforcement tool, secret scanner, GitHub Actions workflow, release automation, or any dependency.
 - Do not read, print, infer, request, or store real secrets (API keys, tokens, cookies, private keys, credentials, or SecretStore values).

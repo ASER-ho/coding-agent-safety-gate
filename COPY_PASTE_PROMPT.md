@@ -11,6 +11,9 @@ Read these files if they exist:
 - .ai/PROJECT_RULES.md
 - .ai/NEXT_TASK.md
 
+If .ai/PROJECT_RULES.md does not exist, ask the human to provide the project
+rules before continuing.
+
 Treat NEXT_TASK.md as the only task you are currently authorized to perform.
 
 Work inside the approved file and action scope. Do not expand the scope.
