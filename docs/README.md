@@ -8,8 +8,10 @@ This directory contains documentation for `coding-agent-safety-gate`. Read in th
 
 | 顺序 / Order | 文件 / File | 内容 / What it covers |
 |---|---|---|
-| 1 | `safety-boundaries.md` | 默认安全规则：机密安全、路径安全、Git 安全、环境安全、执行安全、证据型验收，以及为什么这只是一层而不是整个安全系统 / The default safety rules: secret-safe, path-safe, git-safe, env-safe, execution-safe, evidence-based acceptance, and why this is one layer, not the whole safety system |
-| 2 | `human-in-the-loop.md` | 用户与 AI Agent 的责任分工、多 Agent 协作流程、需要用户决策的点 / Division of responsibility between humans and AI agents, multi-agent collaboration flow, required human decision points |
+| 1 | `safety-boundaries.md` | 默认安全规则：机密安全、路径安全、Git 安全、环境安全、执行安全、证据型验收 / The default safety rules |
+| 2 | `human-in-the-loop.md` | 用户与 AI Agent 的责任分工、多 Agent 协作流程、必须由用户决策的节点 / Division of responsibility, multi-agent flow, human decision points |
+| 3 | `../LIMITATIONS.md` | 诚实说明本项目能做什么、不能做什么——无 runtime enforcement、无 secret scan、依赖 Agent 诚实 / Honest explanation of what this project can and cannot do |
+| 4 | `../LITE_MODE.md` | 只保留三件事的最小用法：一个任务、两个边界、一条证据 / Minimal usage: one task, two boundaries, one piece of evidence |
 
 ## 阅读后 / After reading
 

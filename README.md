@@ -36,6 +36,10 @@ No install. No CLI. No dependencies. No runtime enforcement. Human owns final de
 
 See **[QUICKSTART.md](QUICKSTART.md)** for more options, including custom skill setup.
 
+只想要最简单的方式？看 **[LITE_MODE.md](LITE_MODE.md)**。想知道本项目不能做什么？看 **[LIMITATIONS.md](LIMITATIONS.md)**。
+
+Want the simplest approach? See **[LITE_MODE.md](LITE_MODE.md)**. Want to know what this project can't do? See **[LIMITATIONS.md](LIMITATIONS.md)**.
+
 ## First Screen / 首屏
 
 本项目提供一套可复制的 skill 和少量 Markdown 模板，帮助用户在 AI 编程助手开始工作前定义任务边界。v0.1 刻意保持小巧，只包含 Markdown 文档、一个 skill 文件、模板、文档和示例。不运行代码、不安装依赖、不管理 release、不扫描 secret、不替代用户判断。
