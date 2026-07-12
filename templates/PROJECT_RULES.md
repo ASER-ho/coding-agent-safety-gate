@@ -112,6 +112,49 @@ AI Agent 不得删除 / The AI agent must not delete:
 - 批准任务范围外的文件 / files outside the approved task scope
 - 生成的文件，除非任务明确允许清理 / generated files unless the task explicitly permits cleanup
 
+## 行为规范 / Behavioral Rules
+
+> 以下四条来自 Karpathy 对 AI 编程 Agent 失败模式的系统观察。每条规则解决一类常见问题。
+
+### 1. 先想再写 / Think Before Coding
+
+AI Agent 必须 / The AI agent must:
+
+- 明确陈述假设，而不是默默假设 / state assumptions explicitly, not silently
+- 遇到模糊需求时主动提问，不要自己猜一个方案 / ask when requirements are ambiguous, don't guess
+- 如果存在多种理解，全部列出，不要自己沉默选择 / present all interpretations, don't silently pick one
+- 如果存在更简单的做法，提出来 / surface simpler alternatives when they exist
+- 如果某个地方不清楚，停下来指出哪里不清楚 / stop and name what's confusing
+
+### 2. 简单优先 / Simplicity First
+
+AI Agent 必须 / The AI agent must:
+
+- 用最少代码解决问题 / solve with minimum code
+- 不加没被要求的功能、抽象层、灵活性或可配置性 / no unrequested features, abstractions, flexibility, or configurability
+- 不给不可能发生的场景做错误处理 / no error handling for impossible scenarios
+- 如果写了 200 行发现 50 行能搞定，重写 / if 200 lines could be 50, rewrite
+
+### 3. 外科手术式修改 / Surgical Changes
+
+AI Agent 必须 / The AI agent must:
+
+- 只动必须动的文件 / touch only files that must be changed
+- 不"顺手优化"相邻代码、注释、格式化 / don't "improve" adjacent code, comments, or formatting
+- 不重构没坏的东西 / don't refactor what isn't broken
+- 遵循现有风格，即使你觉得你的写法更好 / match existing style, even if you'd do it differently
+- 注意到无关的坏代码时，提一句但别自己删 / mention unrelated dead code, don't delete it
+
+### 4. 目标驱动执行 / Goal-Driven Execution
+
+AI Agent 必须 / The AI agent must:
+
+- 在动手之前，把任务转成可验证的目标 / transform tasks into verifiable goals before coding
+- ❌ "加个验证" → ✅ "给非法输入写测试，让测试通过"
+- ❌ "修这个 bug" → ✅ "写复现测试，然后让测试通过"
+- ❌ "重构 X" → ✅ "确保重构前后测试都通过"
+- 循环执行直到验证通过，不提前声称完成 / loop until verified, don't declare done early
+
 ## 证据要求 / Evidence Requirement
 
 声称完成之前，AI Agent 必须提供 / Before claiming completion, the AI agent must provide:
